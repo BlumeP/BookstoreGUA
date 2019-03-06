@@ -1,8 +1,9 @@
 page 50103 "Book Fact Box"
 {
-    Caption = 'Book';
+    Caption = 'Book Details FactBox';
     PageType = CardPart;
     SourceTable = Book;
+    editable = false;
 
     layout
     {
@@ -14,13 +15,11 @@ page 50103 "Book Fact Box"
                 field("No."; "No.")
                 {
                     ApplicationArea = all;
+                    DrillDown = true;
 
                     trigger OnDrillDown()
-                    var
-                        book: record Book;
                     begin
-                        book.Get(rec."No.");
-                        Page.Run(Page::BookCard, book);
+                        ShowDetails();
                     end;
                 }
                 field(Title; Title)

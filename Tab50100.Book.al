@@ -48,4 +48,9 @@ table 50100 "Book"
         fieldgroup(DropDown; "No.", Title, Hardcover) { }
 
     }
+
+    procedure ShowDetails()
+    begin   
+        Page.run(page::BookCard, Rec); 
+    end;
 }
