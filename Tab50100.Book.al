@@ -41,3 +41,4 @@ table 50100 "Book"
         fieldgroup(DropDown; "No.", Title, Hardcover) { }
 
     }
+}
