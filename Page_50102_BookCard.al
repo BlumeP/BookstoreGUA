@@ -1,11 +1,9 @@
-page 50100 "Book Card"
+page 50102 "BookCard"
 {
-    // Properties
     Caption = 'Book Card';
     PageType = Card;
     SourceTable = Book;
 
-    // Layout beginnen
     layout
     {
         area(Content)
@@ -13,44 +11,31 @@ page 50100 "Book Card"
             group("General")
             {
                 Caption = 'General';
-
                 field("No."; "No.")
                 {
-                    ApplicationArea = All;
+                    ApplicationArea = all;
                 }
                 field(Title; Title)
                 {
-                    ApplicationArea = All;
-                }
-                field(Autor; Autor)
-                {
-                    ApplicationArea = All;
+                    ApplicationArea = all;
                 }
             }
-
             group("Details")
             {
                 Caption = 'Details';
-
+                field(Autor; Autor)
+                {
+                    ApplicationArea = all;
+                }
                 field(Hardcover; Hardcover)
                 {
-                    ApplicationArea = All;
+                    ApplicationArea = all;
                 }
                 field("Page Count"; "Page Count")
                 {
-                    ApplicationArea = All;
+                    ApplicationArea = all;
                 }
             }
         }
-
-        area(FactBoxes)
-        {
-
-        }
     }
-
-    trigger OnOpenPage()
-    begin
-        Message('Ello');
-    end;
 }

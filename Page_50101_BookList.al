@@ -1,11 +1,13 @@
 Page 50101 "Books List"
 {
 
-    CardPageId = 50100;
+    CardPageId = 50102;
     Caption = 'Books';
     Editable = false;
     PageType = List;
     SourceTable = Book;
+    ApplicationArea = All;
+    UsageCategory = Lists;
 
 
     layout
