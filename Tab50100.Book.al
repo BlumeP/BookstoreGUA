@@ -2,7 +2,7 @@ table 50100 "Book"
 {
     Caption = 'Buch';
     DataCaptionFields = "No.", Title;
-
+    DrillDownPageId = 50102;
 
     fields
     {
