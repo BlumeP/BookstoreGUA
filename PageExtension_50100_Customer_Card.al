@@ -8,7 +8,6 @@ pageextension 50100 "Customer Card Favourite Book" extends "Customer Card"
             {
                 Caption = 'Favourite Book';
                 ApplicationArea = All;
-                TableRelation = Book;
             }
         }
     }
