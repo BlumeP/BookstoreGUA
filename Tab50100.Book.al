@@ -2,7 +2,7 @@ table 50100 "Book"
 {
     Caption = 'Buch';
     DataCaptionFields = "No.", Title;
-    LookupPageId = 50102;
+
 
     fields
     {
@@ -39,29 +39,5 @@ table 50100 "Book"
     fieldgroups
     {
         fieldgroup(DropDown; "No.", Title, Hardcover) { }
+
     }
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
-}
