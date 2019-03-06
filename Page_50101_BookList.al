@@ -1,9 +1,12 @@
 Page 50101 "Books List"
 {
-    PageType = List;
+
     CardPageId = 50100;
-    Caption = 'Book List';
+    Caption = 'Books';
+    Editable = false;
+    PageType = List;
     SourceTable = Book;
+
 
     layout
     {
@@ -15,23 +18,23 @@ Page 50101 "Books List"
                 field("No."; "No.")
                 {
                     Caption = 'No.';
-
+                    ApplicationArea = All;
                 }
                 field(Title; Title)
                 {
-
+                    ApplicationArea = All;
                 }
                 field(Autor; Autor)
                 {
-
+                    ApplicationArea = All;
                 }
                 field(Hardcover; Hardcover)
                 {
-
+                    ApplicationArea = All;
                 }
                 field("Page Count"; "Page Count")
                 {
-
+                    ApplicationArea = All;
                 }
             }
 

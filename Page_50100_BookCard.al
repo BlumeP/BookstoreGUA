@@ -12,26 +12,33 @@ page 50100 "Book Card"
         {
             group("General")
             {
-                Caption = 'Allgemein';
+                Caption = 'General';
 
                 field("No."; "No.")
                 {
-
+                    ApplicationArea = All;
                 }
                 field(Title; Title)
                 {
-
+                    ApplicationArea = All;
                 }
                 field(Autor; Autor)
                 {
+                    ApplicationArea = All;
+                }
+            }
+
+            group("Details")
+            {
+                Caption = 'Details';
 
                 field(Hardcover; Hardcover)
                 {
-
+                    ApplicationArea = All;
                 }
                 field("Page Count"; "Page Count")
                 {
-
+                    ApplicationArea = All;
                 }
             }
         }
