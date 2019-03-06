@@ -1,0 +1,23 @@
+{
+  "id": "90ae421d-7149-4a50-8658-bd0c09f7a010",
+  "name": "BookStore",
+  "publisher": "GOB Software & Systeme",
+  "brief": "",
+  "description": "",
+  "version": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "thH3ZC8HG5.jpg",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "13.0.0.0",
+  "application": "13.0.0.0",
+  "idRange": {
+    "from": 50100,
+    "to": 50149
+  },
+  "runtime": "2.3"
+}
