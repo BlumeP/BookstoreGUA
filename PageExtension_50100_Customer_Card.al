@@ -11,4 +11,4 @@ pageextension 50100 "Customer Card Favourite Book" extends "Customer Card"
             }
         }
     }
-}
+}                
