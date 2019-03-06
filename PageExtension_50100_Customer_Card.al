@@ -10,5 +10,13 @@ pageextension 50100 "Customer Card Favourite Book" extends "Customer Card"
                 ApplicationArea = All;
             }
         }
+        addlast(FactBoxes)
+        {
+            part("Book Details"; "Book Fact Box")
+            {
+                ApplicationArea = All;
+                SubPageLink = "No." = field ("Favorite Book No.");
+            }
+        }
     }
-}                
+}
