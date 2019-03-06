@@ -25,7 +25,6 @@ page 50100 "Book Card"
                 field(Autor; Autor)
                 {
 
-                }
                 field(Hardcover; Hardcover)
                 {
 
