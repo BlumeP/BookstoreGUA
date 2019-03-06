@@ -15,7 +15,7 @@ pageextension 50100 "Customer Card Favourite Book" extends "Customer Card"
             part("Book Details Fact Box"; "Book Fact Box")
             {
                 ApplicationArea = All;
-                Caption = 'Book Details Fact Box';
+                Caption = 'Book Details';
                 SubPageLink = "No." = field ("Favorite Book No.");
             }
         }
