@@ -7,6 +7,10 @@ tableextension 50100 "Customer Book Extension" extends "Customer"
             Caption = 'Favorite Book No.';
             TableRelation = Book;
 
+            trigger OnValidate()
+            begin
+                Message('Lieblingsbuch geändert!');
+            End;
             
         }
         
