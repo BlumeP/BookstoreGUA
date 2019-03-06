@@ -8,9 +8,10 @@
             "server": "http://BC",
             "serverInstance": "NAV",
             "authentication": "Windows",
-            "startupObjectId": 50101,
+            "startupObjectId": 22,
             "startupObjectType": "Page",
-            "breakOnError": true
+            "breakOnError": true,
+            // "schemaUpdateMode": "Recreate", <- hier löscht er die Datensätze aus der Tabelle und zwar alle! Wenn Änderungen an der Tabellenstruktur falsch vorliegen...
         }
     ]
 }
