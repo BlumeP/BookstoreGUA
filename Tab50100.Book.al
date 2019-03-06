@@ -2,6 +2,7 @@ table 50100 "Book"
 {
     Caption = 'Buch';
     DataCaptionFields = "No.", Title;
+    LookupPageId = 50102;
 
     fields
     {
@@ -33,6 +34,11 @@ table 50100 "Book"
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Title, Hardcover) { }
     }
 
     var
