@@ -2,6 +2,7 @@ table 50100 "Book"
 {
     Caption = 'Buch';
     DataCaptionFields = "No.", Title;
+    DrillDownPageId = 50102;
 
     fields
     {
@@ -25,6 +26,13 @@ table 50100 "Book"
         {
             Caption = 'Seitenzahl';
         }
+        field(6; "No. of Customers"; Integer)
+        {
+            Caption = 'No. of Customers';
+            Editable = false;
+            FieldClass = FlowField;
+            CalcFormula = count (Customer where ("Favorite Book No." = field ("No.")));
+        }
     }
 
     keys
@@ -35,27 +43,14 @@ table 50100 "Book"
         }
     }
 
-    var
-        myInt: Integer;
+    fieldgroups
+    {
+        fieldgroup(DropDown; "No.", Title, Hardcover) { }
 
-    trigger OnInsert()
-    begin
+    }
 
+    procedure ShowDetails()
+    begin   
+        Page.run(page::BookCard, Rec); 
     end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
 }
